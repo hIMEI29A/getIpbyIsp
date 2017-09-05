@@ -2,10 +2,6 @@
 
 Simple cURL based console application for getting IP ranges from https://suip.biz [suip.biz](https://suip.biz) web-services by city, country (very big size!! i'm really afraid) or ISP. In case of ISP you may specify single ip or web-site url of that provider as argument of script. 
 
-## Documentation
-
-See full documentation on [GitHubPages](https://hlmel.github.io/getIpbyIsp/)
-
 ## Dependencies
 
 * pear/console_commandline
@@ -24,24 +20,44 @@ composer require himei/get-ip-by-isp
 git clone https://github.com/hlmel/getIpbyIsp.git
 ```
 
+Follow to the root programm folder:
+
+```shell
+cd getIpbyIsp
+```
+
 ##### Then install dependencies
 
 ```shell
-php composer.phar install
+composer install
 ```
 
 ## Usage
 
+Now follow to the src directory in root programm folder:
+
+```shell
+cd src
+```
+
+Make main program file executable:
+
+```shell
+chmod +x getipbyisp.php
+```
+
+Now use it.
+
 Type next in your console for getting help:
 
 ```shell
-php getipbyisp.php -h
+getipbyisp.php -h
 ```
 
 or
 
 ```shell
-php getipbyisp.php --help
+getipbyisp.php --help
 ```
 
 The output:
@@ -69,25 +85,25 @@ Arguments:
 To get all IP ranges of **Serbia**
 
 ```shell
-php getipbyisp.php country RS
+getipbyisp.php country RS
 ```
 
 To get all IP ranges of **London** and save it to **file.txt**
 
 ```shell
-php getipbyisp.php city london -o file.txt
+getipbyisp.php city london -o file.txt
 ```
 
 To get all IP ranges of **Beeline** ISP
 
 ```shell
-php getipbyisp.php isp beeline.ru
+getipbyisp.php isp beeline.ru
 ```
 
 or
 
 ```shell
-php getipbyisp.php isp 217.118.85.19
+getipbyisp.php isp 217.118.85.19
 ```
 
 **Warning!!!** In case of request by city, write the name of the city **carefully and accurately**, as much as possible. If an error occurs in the name, the search on the uncleaned database is activated, and the result includes **ALL** IP ranges from **all** possible variants. To get the most accurate result, the city name **must not contain errors**.
