@@ -6,16 +6,16 @@ namespace GetIpByIsp;
  * Short description for getipby_core.php
  *
  * @package getipby_core
- * @author hIMEI <hIMEI@hiddentemple>
+ * @author hIMEI <himei@tuta.io>
  * @version 0.1
- * @copyright (C) 2017 hIMEI <hIMEI@hiddentemple>
+ * @copyright (C) 2017 hIMEI <himei@tuta.io>
  * @license MIT
  */
 
 error_reporting(E_ALL);
 
 /**
- * GetIp
+ * GetIpCore
  *
  * @package
  * @version $id$

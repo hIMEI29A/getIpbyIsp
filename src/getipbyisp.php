@@ -4,7 +4,7 @@ namespace GetIpByIsp;
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
- * Short description for
+ * Short description for getIpByIsp.php
  *
  * @package
  * @author hIMEI <hIMEI@tuta.io>
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 require_once(__DIR__ . '/getipby_core.php');
 
 /**
- * GetIp
+ * GetIpCli
  *
  * @package
  * @version $id$

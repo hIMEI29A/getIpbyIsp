@@ -26,7 +26,7 @@ Follow to the root programm folder:
 cd getIpbyIsp
 ```
 
-##### Then install dependencies
+#### Then install dependencies
 
 ```shell
 composer install
@@ -51,13 +51,13 @@ Now use it.
 Type next in your console for getting help:
 
 ```shell
-getipbyisp.php -h
+./getipbyisp.php -h
 ```
 
 or
 
 ```shell
-getipbyisp.php --help
+./getipbyisp.php --help
 ```
 
 The output:
@@ -85,25 +85,25 @@ Arguments:
 To get all IP ranges of **Serbia**
 
 ```shell
-getipbyisp.php country RS
+./getipbyisp.php country RS
 ```
 
 To get all IP ranges of **London** and save it to **file.txt**
 
 ```shell
-getipbyisp.php city london -o file.txt
+./getipbyisp.php city london -o file.txt
 ```
 
 To get all IP ranges of **Beeline** ISP
 
 ```shell
-getipbyisp.php isp beeline.ru
+./getipbyisp.php isp beeline.ru
 ```
 
 or
 
 ```shell
-getipbyisp.php isp 217.118.85.19
+./getipbyisp.php isp 217.118.85.19
 ```
 
 **Warning!!!** In case of request by city, write the name of the city **carefully and accurately**, as much as possible. If an error occurs in the name, the search on the uncleaned database is activated, and the result includes **ALL** IP ranges from **all** possible variants. To get the most accurate result, the city name **must not contain errors**.
