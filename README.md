@@ -34,7 +34,7 @@ composer install
 
 ## Usage
 
-Now follow to the src directory in root programm folder:
+Now follow to the src directory in root program folder:
 
 ```shell
 cd src

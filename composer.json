@@ -17,7 +17,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.3.0",
+        "php": ">=7.0.0",
         "pear/console_commandline": "dev-master"
     }
 }
