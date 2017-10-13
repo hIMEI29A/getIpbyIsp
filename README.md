@@ -42,13 +42,13 @@ composer install
 Now follow to the src directory in root program folder:
 
 ```shell
-cd src
+cd bin
 ```
 
 Make main program file executable:
 
 ```shell
-chmod +x getipbyisp.php
+chmod +x getipbyisp
 ```
 
 Now use it.
@@ -56,13 +56,13 @@ Now use it.
 Type next in your console for getting help:
 
 ```shell
-./getipbyisp.php -h
+./getipbyisp -h
 ```
 
 or
 
 ```shell
-./getipbyisp.php --help
+./getipbyisp --help
 ```
 
 The output:
@@ -72,7 +72,7 @@ Console application for getting IP ranges
 from suip.biz web-services by city, country or ISP
 
 Usage:
-  getipbyisp.php [options] type request
+  getipbyisp [options] type request
 
 Options:
   -o output, --output=output  File to store the result
@@ -90,25 +90,25 @@ Arguments:
 To get all IP ranges of **Serbia**
 
 ```shell
-./getipbyisp.php country RS
+./getipbyisp country RS
 ```
 
 To get all IP ranges of **London** and save it to **file.txt**
 
 ```shell
-./getipbyisp.php city london -o file.txt
+./getipbyisp city london -o file.txt
 ```
 
 To get all IP ranges of **Beeline** ISP
 
 ```shell
-./getipbyisp.php isp beeline.ru
+./getipbyisp isp beeline.ru
 ```
 
 or
 
 ```shell
-./getipbyisp.php isp 217.118.85.19
+./getipbyisp isp 217.118.85.19
 ```
 
 **Warning!!!** In case of request by city, write the name of the city **carefully and accurately**, as much as possible. If an error occurs in the name, the search on the uncleaned database is activated, and the result includes **ALL** IP ranges from **all** possible variants. To get the most accurate result, the city name **must not contain errors**.
