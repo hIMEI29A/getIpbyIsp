@@ -1,27 +1,13 @@
 <?php
 namespace GetIpByIsp;
-/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
- * Short description for getipby_core.php
+ * Class GetIpCore
  *
- * @package getipby_core
- * @author hIMEI <himei@tuta.io>
- * @version 0.1
- * @copyright (C) 2017 hIMEI <himei@tuta.io>
- * @license MIT
- */
-
-error_reporting(E_ALL);
-
-/**
- * GetIpCore
- *
- * @package
- * @version $id$
+ * @package   GetIpByIsp
  * @copyright hIMEI
- * @author hIMEI <himei@tuta.io>
- * @license PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}
+ * @author    hIMEI <himei@tuta.io>
+ * @license   PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}
  */
 class GetIpCore
 {
@@ -32,7 +18,7 @@ class GetIpCore
      * @access private
      */
     private $city_link = 'https://suip.biz/ru/?act=iploc';
-    
+
     /**
      * country_link Web service's url to get IP ranges by country.
      *
@@ -55,14 +41,12 @@ class GetIpCore
      * @var array
      * @access private
      */
-    private $params = array();
+    private $params = [];
 
     /**
-     * __construct Creates object of GetIpCore class.
+     * GetIpCore constructor.
      *
-     * @param mixed $params
-     * @access public
-     * @return void
+     * @param array $params
      */
     public function __construct($params)
     {
@@ -70,10 +54,7 @@ class GetIpCore
     }
 
     /**
-     * getparams Gets private attribute.
-     *
-     * @access public
-     * @return void
+     * @return array
      */
     public function getParams()
     {
@@ -94,7 +75,7 @@ class GetIpCore
         if ($params['type'] === 'city') {
             $link = $this->city_link;
         }
- 
+
         if ($params['type'] === 'country') {
             $link = $this->country_link;
         }
@@ -105,7 +86,7 @@ class GetIpCore
 
         return $link;
     }
- 
+
     /**
      * userAgent Sets random "user agent" value from 1034 values. User agent strings
      * given from SqlMap package.
@@ -115,10 +96,10 @@ class GetIpCore
      */
     protected function userAgent()
     {
-        $ua_file    = file(__DIR__.'/agents');
+        $ua_file = file(__DIR__ . '/../data/agents.txt');
         $random_num = random_int(0, 1034);
         $user_agent = trim($ua_file[$random_num]);
-    
+
         return $user_agent;
     }
 
@@ -131,14 +112,15 @@ class GetIpCore
      */
     protected function getIps()
     {
-        $post_data = array();
+        $post_data = [];
+        $post_items = [];
         $params = $this->getParams();
         $user_agent = $this->userAgent();
         $link = $this->getLink();
         $post_data['url'] = $params['url'];
-        $post_data['action']  = $params['action'];
+        $post_data['action'] = $params['action'];
         foreach ($post_data as $key => $value) {
-            $post_items[] = $key.'='.$value;
+            $post_items[] = $key . '=' . $value;
         }
 
         $post_string = implode('&', $post_items);
@@ -150,11 +132,11 @@ class GetIpCore
         curl_setopt($session, CURLOPT_POSTFIELDS, $post_string);
         curl_setopt($session, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($session, CURLOPT_FOLLOWLOCATION, 1);
-              
+
         $result = curl_exec($session);
-        print(curl_errno($session) . '-' .curl_error($session));
+        print(curl_errno($session) . '-' . curl_error($session));
         curl_close($session);
-        
+
         return $result;
     }
 
@@ -193,7 +175,7 @@ class GetIpCore
             $output = fopen($file, "w");
 
             if ($output === false) {
-                die(RED.BOLD."Error opening file\n".RESET);
+                die(RED . BOLD . "Error opening file\n" . RESET);
             }
 
             fwrite($output, $result);
@@ -201,6 +183,7 @@ class GetIpCore
         }
 
         print($result);
+
         return $result;
     }
 }
