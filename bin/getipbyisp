@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-
+namespace GetIpByIsp;
 error_reporting(E_ALL);
 
 /* Global constants for colorize output */
@@ -14,7 +14,7 @@ const    RESET  =    "\x1B[0m";
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$cli = new \GetIpByIsp\GetIpCli();
+$cli = new GetIpByIsp\GetIpCli();
 $params = $cli->cliParse();
-$get_ip = new \GetIpByIsp\GetIpCore($params);
+$get_ip = new GetIpByIsp\GetIpCore($params);
 $full_res = $get_ip->outPut();
