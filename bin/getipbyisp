@@ -13,6 +13,8 @@ const    LINE   =    "\x1B[4m";
 const    RESET  =    "\x1B[0m";
 
 require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../src/GetIpCli.php';
+require_once __DIR__ . '/../src/GetIpCore.php';
 
 $cli = new GetIpByIsp\GetIpCli();
 $params = $cli->cliParse();
