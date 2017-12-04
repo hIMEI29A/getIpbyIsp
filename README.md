@@ -1,15 +1,10 @@
 # GetIpByIsp
 
-<<<<<<< HEAD
     ┌─┐┌─┐┌┬┐╦┌─┐╔╗ ┬ ┬╦┌─┐┌─┐
     │ ┬├┤  │ ║├─┘╠╩╗└┬┘║└─┐├─┘
     └─┘└─┘ ┴ ╩┴  ╚═╝ ┴ ╩└─┘┴  
 
-
-Simple cURL based console application for getting IP ranges from https://suip.biz [suip.biz](https://suip.biz) web-services by city, country (very big size!! i'm really afraid) or ISP. In case of ISP you may specify single ip or web-site url of that provider as argument of script. 
-=======
-Simple cURL based console application for getting IP ranges from [https://suip.biz](https://suip.biz) web-services by city, country (very big size!! i'm really afraid) or ISP. In case of ISP you may specify single ip or web-site url of that provider as argument of script. 
->>>>>>> temp
+Simple cURL based console application for getting IP ranges from [https://suip.biz](https://suip.biz) web-services by city, country (very big size!! i'm really afraid) or ISP. In case of ISP you may specify single ip or web-site url of that provider as argument of script.
 
 ## Dependencies
 
