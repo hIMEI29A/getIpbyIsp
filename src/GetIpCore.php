@@ -1,13 +1,23 @@
 <?php
 namespace GetIpByIsp;
+<<<<<<< HEAD:src/GetIpCore.php
+=======
+
+/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
+>>>>>>> temp:src/getipby_core.php
 
 /**
  * Class GetIpCore
  *
  * @package   GetIpByIsp
  * @copyright hIMEI
+<<<<<<< HEAD:src/GetIpCore.php
  * @author    hIMEI <himei@tuta.io>
  * @license   PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}
+=======
+ * @author hIMEI <himei@tuta.io>
+ * @license MIT
+>>>>>>> temp:src/getipby_core.php
  */
 class GetIpCore
 {
@@ -47,6 +57,11 @@ class GetIpCore
      * GetIpCore constructor.
      *
      * @param array $params
+<<<<<<< HEAD:src/GetIpCore.php
+=======
+     * @access public
+     * @return void
+>>>>>>> temp:src/getipby_core.php
      */
     public function __construct($params)
     {
@@ -54,7 +69,15 @@ class GetIpCore
     }
 
     /**
+<<<<<<< HEAD:src/GetIpCore.php
      * @return array
+=======
+     * getparams Gets private attribute.
+     *
+     * @param  void
+     * @access public
+     * @return void
+>>>>>>> temp:src/getipby_core.php
      */
     public function getParams()
     {
