@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 namespace GetIpByIsp;
+
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
@@ -34,21 +35,21 @@ require_once(__DIR__ . '/getipby_core.php');
  * @version $id$
  * @copyright hIMEI
  * @author hIMEI <himei@tuta.io>
- * @license PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}
+ * @license MIT
  */
 class GetIpCli
 {
     /**
-     * parser Oblect of Pear::Console_CommandLine package's main class. 
-     * 
-     * @var mixed
+     * parser Oblect of Pear::Console_CommandLine package's main class.
+     *
+     * @var object
      * @access private
      */
     private $parser;
 
     /**
      * country_codes Array of 2-letters country codes.
-     * 
+     *
      * @var array
      * @access private
      */
@@ -80,7 +81,8 @@ class GetIpCli
 
     /**
      * __construct Creates object of main application class, initialise the parser.
-     * 
+     *
+     * @param  void
      * @access public
      * @return void
      */
@@ -121,7 +123,8 @@ for city - its name, for ISP - single IP or ISP url\n".RESET
 
     /**
      * getParser Gets private attribute.
-     * 
+     *
+     * @param  void
      * @access public
      * @return void
      */
@@ -132,7 +135,8 @@ for city - its name, for ISP - single IP or ISP url\n".RESET
 
     /**
      * getCountryCodes Gets private attribute.
-     * 
+     *
+     * @param  void
      * @access public
      * @return void
      */
@@ -143,7 +147,8 @@ for city - its name, for ISP - single IP or ISP url\n".RESET
   
     /**
      * cliParse Parses CLI arguments.
-     * 
+     *
+     * @param  void
      * @access public
      * @return array $params Array of app's parameters.
      */

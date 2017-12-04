@@ -1,5 +1,6 @@
 <?php
 namespace GetIpByIsp;
+
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
@@ -21,7 +22,7 @@ error_reporting(E_ALL);
  * @version $id$
  * @copyright hIMEI
  * @author hIMEI <himei@tuta.io>
- * @license PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}
+ * @license MIT
  */
 class GetIpCore
 {
@@ -60,7 +61,7 @@ class GetIpCore
     /**
      * __construct Creates object of GetIpCore class.
      *
-     * @param mixed $params
+     * @param array $params
      * @access public
      * @return void
      */
@@ -72,6 +73,7 @@ class GetIpCore
     /**
      * getparams Gets private attribute.
      *
+     * @param  void
      * @access public
      * @return void
      */

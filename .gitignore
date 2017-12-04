@@ -1,2 +1,95 @@
-/vendor/*
-/nbproject/private/
+###SublimeText###
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+###Cache files###
+*.cache
+cache/
+Cache/
+
+###Log files###
+*.log
+logs/*
+
+###Temp files###
+*.tmp
+tmp/*
+temp/*
+*.swp
+~*
+*~
+._*
+
+###Dev files###
+
+## Hint : prefix your work files/folders by "gign" (stands for Git IGNore)
+gign-*
+gign_*
+orig_*
+*.orig
+*.original
+*.ORIG
+*.ORIGINAL
+
+###Popular PHP libraries###
+
+## Composer
+vendor/
+#/composer.phar
+#/composer
+
+## PHPUnit
+/.phpunit/*
+#phpunit.xml
+
+## rocketeers/rocketeer Task runner and deployment package
+.rocketeer
+
+## These files in the projet root path should be ignored IN MOST OF CASE :
+/*.7z
+/*.bz2
+/*.gz
+/*.jar
+/*.rar
+/*.tar
+/*.tgz
+/*.zip
+/*.dmg
+/*.iso
+/*.sql
+/*.csv
+
+###IDE files###
+
+## JetBrains IDEs
+/.idea*
+
+## NetBeans
+/nbproject/
+
+## Eclipse, ZendStudio
+/.buildpath
+/.cache
+/.metadata
+/.project
+/.settings
+
+## Others
+/atlassian*
+*.scc
+.externalToolBuilders
+.vimrc
+local.properties

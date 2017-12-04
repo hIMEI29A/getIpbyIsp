@@ -1,6 +1,6 @@
 # GetIpByIsp
 
-Simple cURL based console application for getting IP ranges from https://suip.biz [suip.biz](https://suip.biz) web-services by city, country (very big size!! i'm really afraid) or ISP. In case of ISP you may specify single ip or web-site url of that provider as argument of script. 
+Simple cURL based console application for getting IP ranges from [https://suip.biz](https://suip.biz) web-services by city, country (very big size!! i'm really afraid) or ISP. In case of ISP you may specify single ip or web-site url of that provider as argument of script. 
 
 ## Dependencies
 
@@ -8,25 +8,25 @@ Simple cURL based console application for getting IP ranges from https://suip.bi
 
 ## Installation
 
-#### Install via Composer:
+**Install via Composer:**
 
 ```shell
 composer require himei/get-ip-by-isp
 ```
 
-#### For manual installation clone repo
+**For manual installation clone repo**
 
 ```shell
 git clone https://github.com/hlmel/getIpbyIsp.git
 ```
 
-Follow to the root programm folder:
+**Follow to the root programm folder:**
 
 ```shell
 cd getIpbyIsp
 ```
 
-#### Then install dependencies
+**Then install dependencies**
 
 ```shell
 composer install
@@ -34,13 +34,13 @@ composer install
 
 ## Usage
 
-Now follow to the src directory in root program folder:
+**Follow to the src directory in root program folder:**
 
 ```shell
 cd src
 ```
 
-Make main program file executable:
+**Make main program file executable:**
 
 ```shell
 chmod +x getipbyisp.php
@@ -48,7 +48,7 @@ chmod +x getipbyisp.php
 
 Now use it.
 
-Type next in your console for getting help:
+**Type next in your console for getting help:**
 
 ```shell
 ./getipbyisp.php -h
@@ -60,10 +60,10 @@ or
 ./getipbyisp.php --help
 ```
 
-The output:
+**The output:**
 
 ```shell
-Console application for getting IP ranges 
+Console application for getting IP range 
 from suip.biz web-services by city, country or ISP
 
 Usage:
@@ -77,9 +77,8 @@ Options:
 Arguments:
   type     Set the type of which IP ranges will be requested: city, counrty or isp
            
-  request  Request string: for country - 2-letter country code, for city - its name, for ISP - single IP or ISP's url
+  request  Request string: for country - 2-letter country code, for city - its name, for ISP - single IP or ISPs url
 ```
-
 ## Examples
 
 To get all IP ranges of **Serbia**
