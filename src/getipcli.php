@@ -1,13 +1,12 @@
-#!/usr/bin/env php
 <?php
 namespace GetIpByIsp;
 
 /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
 
 /**
- * Short description for getIpByIsp.php
+ * Short description for getipcli.php
  *
- * @package
+ * @package getipbyisp
  * @author hIMEI <hIMEI@tuta.io>
  * @version 0.1
  * @copyright (C) 2017 hIMEI <hIMEI@tuta.io>
@@ -16,22 +15,10 @@ namespace GetIpByIsp;
 
 error_reporting(E_ALL);
 
-/* Global constants for colorize output */
-
-const    RED    =    "\x1B[31m";
-const    GRN    =    "\x1B[32m";
-const    YEL    =    "\x1B[33m";
-const    BOLD   =    "\x1B[1m";
-const    LINE   =    "\x1B[4m";
-const    RESET  =    "\x1B[0m";
-
-require_once(__DIR__ . '/../vendor/autoload.php');
-require_once(__DIR__ . '/getipby_core.php');
-
 /**
  * GetIpCli
  *
- * @package
+ * @package getipbyisp
  * @version $id$
  * @copyright hIMEI
  * @author hIMEI <himei@tuta.io>
@@ -200,8 +187,3 @@ for city - its name, for ISP - single IP or ISP url\n".RESET
         return $params;
     }
 }
-
-$cli = new GetIpCli();
-$params = $cli->cliParse();
-$get_ip = new GetIpCore($params);
-$full_res = $get_ip->outPut();
