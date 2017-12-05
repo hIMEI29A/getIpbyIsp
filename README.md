@@ -20,7 +20,7 @@ Simple cURL based console application for getting IP ranges from [https://suip.b
 **Install via Composer:**
 
 ```shell
-composer require himei/get-ip-by-isp
+composer require himei/getIpbyIsp
 ```
 
 **For manual installation clone repo**
