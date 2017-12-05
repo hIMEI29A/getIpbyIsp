@@ -1,5 +1,5 @@
 {
-    "name": "himei/get-ip-by-isp",
+    "name": "himei/getipbyisp",
     "description": "Simple cURL based console application for getting IP ranges from suip.biz web-services by city, country or ISP",
     "keywords": [
         "console",
@@ -7,7 +7,7 @@
         "curl",
         "ip ranges"
     ],
-    "homepage": "https://github.com/hlmel/getIpbyIsp",
+    "homepage": "https://github.com/hIMEI29A/getIpbyIsp",
     "license": "MIT",
     "authors": [
         {
