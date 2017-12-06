@@ -26,7 +26,7 @@ composer require himei/getIpbyIsp
 **For manual installation clone repo**
 
 ```shell
-git clone https://github.com/hlmel/getIpbyIsp.git
+git clone https://github.com/hIMEI29A/getIpbyIsp.git
 ```
 
 **Follow to the root programm folder:**
