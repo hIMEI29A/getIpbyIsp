@@ -19,7 +19,7 @@ namespace GetIpByIsp;
  *
  * @package getipbyisp
  * @author hIMEI <hIMEI@tuta.io>
- * @version 0.1
+ * @version v1.1.0beta
  * @copyright (C) 2017 hIMEI <hIMEI@tuta.io>
  * @license MIT
  */
@@ -40,6 +40,11 @@ require_once __DIR__ . '/../src/getipcli.php';
 require_once __DIR__ . '/../src/getipcore.php';
 
 $cli = new GetIpCli();
+
+if ($argc < 2) {
+    die(RED.BOLD."You must provide arguments. Try 'getipbyisp -h' to get help\n");
+}
+
 $params = $cli->cliParse();
 $get_ip = new GetIpCore($params);
 $full_res = $get_ip->outPut();

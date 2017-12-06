@@ -8,7 +8,7 @@ namespace GetIpByIsp;
  *
  * @package getipby_core
  * @author hIMEI <himei@tuta.io>
- * @version 0.1
+ * @version v1.1.0beta
  * @copyright (C) 2017 hIMEI <himei@tuta.io>
  * @license MIT
  */
